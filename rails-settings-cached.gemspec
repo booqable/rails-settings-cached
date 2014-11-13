@@ -11,5 +11,9 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.summary = %q{This is improved from rails-settings, added caching. Settings is a plugin that makes managing a table of global key, value pairs easy. Think of it like a global Hash stored in you database, that uses simple ActiveRecord like methods for manipulation.  Keep track of any global setting that you dont want to hard code into your rails app.  You can store any kind of object.  Strings, numbers, arrays, or any object. Ported to Rails 3!}
 
-  s.add_dependency("rails", [">= 4.0.0"])
+  s.add_dependency 'rails', '>= 3.1'
+
+  s.add_development_dependency 'rake'
+  s.add_development_dependency 'sqlite3'
+  s.add_development_dependency 'rspec', '2.14.1'
 end
